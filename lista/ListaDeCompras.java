@@ -1,7 +1,6 @@
-package Lista;
-import Lista_opciones.ListaOpciones;
+package lista;
+import mis_metodos.ListaOpciones;
 
-import java.util.List;
 import java.util.Scanner;
 
 public class ListaDeCompras {

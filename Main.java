@@ -1,7 +1,13 @@
-// Importar del nombrePaquete.nombreClase
-import Lista.ListaDeCompras;
-import Lista_opciones.ListaOpciones;
-import interfaz_diseño.Banner;
+import calculadora.AritmeticaBasica;
+import calculadora.CalcularEdad;
+import conversor.ConversorGrados;
+import conversor.Longitudes;
+import conversor.Monedas;
+import IMC.IMC;
+import interfaz_grafica.Banner;
+import lista.ListaDeCompras;
+import mis_metodos.MisMetodos;
+import mis_metodos.ListaOpciones;
 
 import java.util.Scanner;
 
@@ -13,9 +19,6 @@ public class Main {
         // Mostrar el mensaje del banner
         Banner.mensaje();
 
-        // Cargar las opciones en la lista
-        ListaOpciones.cargarOpciones();
-
         // Crear un escáner para la entrada del usuario
         Scanner inputOption = new Scanner(System.in);
         System.out.print("[?]: ");
@@ -24,7 +27,7 @@ public class Main {
         int opcion = inputOption.nextInt();
         System.out.println("-----------------------------------");
 
-        // Evaluar la opción ingresada y ejecutar la correspondiente acción
+
         switch (opcion) {
             case 1:
                 System.out.println("Opcion_1");
@@ -41,9 +44,8 @@ public class Main {
             case 5:
                 System.out.println("Opcion_5");
                 break;
-            case 6:
-                ListaDeCompras.producto();
-                break;
 
+            }
         }
-}
+    }
+

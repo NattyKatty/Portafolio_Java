@@ -1,8 +1,8 @@
-package Matematicas;
+package calculadora;
 
 import java.util.Scanner;
 
-public class Mate {
+public class AritmeticaBasica {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

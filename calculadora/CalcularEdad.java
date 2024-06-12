@@ -1,11 +1,11 @@
-package calculadora_edad;
+package calculadora;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Edad {
+public class CalcularEdad {
 
     public int calcularEdad(LocalDate fechaNacimiento, LocalDate fechaActual) {
         if ((fechaNacimiento != null) && (fechaActual != null)) {
@@ -47,7 +47,7 @@ public class Edad {
     }
 
     public static void main(String[] args) {
-        Edad edad = new Edad();
+        CalcularEdad edad = new CalcularEdad();
         int edadCalculada = edad.obtenerEdad();
         System.out.println("La edad calculada es: " + edadCalculada + " años.");
     }
